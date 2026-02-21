@@ -1,7 +1,5 @@
 """
-Lobster palette tokens for CLI/Ui theming.
-
-In Python, we expose a read-on;y mapping via MappingProxyType.
+Lobster palette tokens for CLI/UI theming.
 """
 
 from __future__ import annotations
