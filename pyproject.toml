@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.21.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "opensynap"
+version = "0.0.1"
+description = "OpenSynap: Python rewrite of OpenClaw"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "ruff>=0.6.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/opensynap"]
+
+[tool.ruff]
+line-length = 100
